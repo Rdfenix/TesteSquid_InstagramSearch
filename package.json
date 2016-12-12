@@ -1,0 +1,23 @@
+{
+  "name": "instagram_search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rdfenix/TesteSquid_InstagramSearch.git"
+  },
+  "author": "Rudnei Carlos de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rdfenix/TesteSquid_InstagramSearch/issues"
+  },
+  "homepage": "https://github.com/Rdfenix/TesteSquid_InstagramSearch#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-load": "^1.1.15"
+  }
+}

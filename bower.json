@@ -1,0 +1,20 @@
+{
+  "name": "instagram_search",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Rudnei Carlos de Oliveira"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Rdfenix/TesteSquid_InstagramSearch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
