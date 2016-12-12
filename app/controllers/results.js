@@ -20,5 +20,14 @@ module.exports = function(){
     })[0];
     result ? res.json(result) : res.status(404).send('Não encontrado');
   };
+
+  controller.removeResult = function(req, res){
+    var idResult = req.params.id;
+    list = list.filter(function(listy){
+      return listy._id != idResult;
+    });
+    res.status(204).end();
+  };
+
   return controller
 };

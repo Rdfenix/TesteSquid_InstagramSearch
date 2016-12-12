@@ -5,7 +5,7 @@
   <div class="container">
     <nav class="text-center" id="menu">
       <ul class="list-unstyled">
-        <li><a href="#" class="btn btn-primary tag-a">Lista de Tags</a></li>
+        <li><a ng-href="#/list" class="btn btn-primary tag-a">Lista de Tags</a></li>
         <li class="search">
           <div class="input-group">
             <input type="search" placeholder="search...">
@@ -13,7 +13,6 @@
           </div>
         </li>
       </ul>
-
     </nav>
   </div>
 </header>
@@ -35,7 +34,7 @@
         <td>{{k.nome}}</td>
         <td>{{k.like}}</td>
         <td class="text-center">
-          <button class="btn btn-info" ng-click="remove(contato)">Salvar</button>
+          <button class="btn btn-info">Salvar</button>
         </td>
       </tr>
     </table>

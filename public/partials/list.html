@@ -1,1 +1,28 @@
-<h1>Lista de Resultados</h1>
+<header>
+  <div class="container">
+    <h1 class="text-center jumbotron">Lista de Resultados</h1>
+    <a ng-href="#/" class="btn btn-primary resultTags">Pesquisas</a>
+  </div>
+</header>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-hove">
+      <tr>
+        <th>Foto</th>
+        <th>Contato</th>
+        <th>Curtidas</th>
+        <th class="text-center">AÇÃO</th>
+      </tr>
+      <tr ng-repeat="k in lists">
+        <td>
+          <img class="img" ng-src="{{k.imagem}}" >
+        </td>
+        <td>{{k.nome}}</td>
+        <td>{{k.like}}</td>
+        <td class="text-center">
+          <button class="btn btn-warning" ng-click="remove(contato)">Remover</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
