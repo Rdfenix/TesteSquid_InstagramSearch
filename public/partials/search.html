@@ -1,5 +1,43 @@
-<h1>Instagram Search</h1>
-<h2>Pesquisa de Tags</h2>
-<input type="search">
-<button>Pesquisar</button>
-<p>Resultado: {{total}}</p>
+<header>
+  <div class="container">
+    <h1 class="text-center jumbotron">Instagram Search</h1>
+  </div>
+  <div class="container">
+    <nav class="text-center" id="menu">
+      <ul class="list-unstyled">
+        <li><a href="#" class="btn btn-primary tag-a">Lista de Tags</a></li>
+        <li class="search">
+          <div class="input-group">
+            <input type="search" placeholder="search...">
+            <button><i class="fa fa-search"></i></button>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <h2>Pesquisa de Tags</h2>
+  <p>Resultado: {{total}}</p>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <tr>
+        <th>Foto</th>
+        <th>Contato</th>
+        <th>Curtidas</th>
+        <th class="text-center">AÇÃO</th>
+      </tr>
+      <tr ng-repeat="lists in list">
+        <td>
+          <img class="img" ng-src="{{lists.imagem}}" >
+        </td>
+        <td>{{lists.nome}}</td>
+        <td>{{lists.like}}</td>
+        <td class="text-center">
+          <button class="btn btn-info" ng-click="remove(contato)">Salvar</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

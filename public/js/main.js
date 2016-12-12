@@ -8,7 +8,11 @@ angular.module('instaSearc', ['ngRoute']).config(function($routeProvider){
     templateUrl: 'partials/list.html',
     controller: 'ListController'
   });
+  $routeProvider.when('/list/:id', {
+    templateUrl: 'partials/tag.html',
+    controller: 'ListController'
+  });
 
   $routeProvider.otherwise({redicteTo: '/'});
-  
+
 });

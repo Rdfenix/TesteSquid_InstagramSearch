@@ -1,0 +1,35 @@
+.jumbotron{
+  margin-top: 0px;
+}
+#menu{
+  margin: 12px 0px;
+}
+#menu li{
+  display: inline-block;
+}
+
+#menu li.search input{
+  height: 30px;
+	line-height: 30px;
+  position: relative;
+  top: 7px;
+  margin-left: 18px;
+}
+
+#menu li.search button{
+  position: absolute;
+  height: 30px;
+  right: 0px;
+  top: 7px;
+  width: 30px;
+}
+
+#menu li a.tag-a{
+  position: relative;
+  top: -2px;
+}
+
+.img{
+  width: 205px;
+  height: 205px;
+}
