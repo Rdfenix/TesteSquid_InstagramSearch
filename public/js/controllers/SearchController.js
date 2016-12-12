@@ -1,8 +1,19 @@
-angular.module('instaSearc').controller('SearchController', function($scope){
+angular.module('instaSearc').controller('SearchController', function($scope, $resource){
   $scope.total = 0;
-  var vm = this;
+  $scope.lists = [];
+  var List = $resource('/results/:id');
 
-  $scope.list = [
+  function searcItem(){
+    List.query(function(lists){
+      $scope.lists = lists;
+    }, function(erro){
+      console.log("Não foi possivel obter a lista");
+      console.log(erro);
+    })
+  }
+
+  searcItem();
+  /*$scope.list = [
       {"_id": 1,
         "nome": "Margaret_Judi",
         "imagem": "http://farm9.staticflickr.com/8440/7990247090_26e89bd641_k.jpg",
@@ -11,6 +22,6 @@ angular.module('instaSearc').controller('SearchController', function($scope){
         "nome": "Marcos_Roberto",
         "imagem": "https://yt3.ggpht.com/-r-NV4YMr0Gc/AAAAAAAAAAI/AAAAAAAAAAA/sCZE_m9wXoU/s900-c-k-no-mo-rj-c0xffffff/photo.jpg",
         "like": 5}
-    ];
+    ];*/
 
 });

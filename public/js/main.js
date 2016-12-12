@@ -1,4 +1,4 @@
-angular.module('instaSearc', ['ngRoute']).config(function($routeProvider){
+angular.module('instaSearc', ['ngRoute', 'ngResource']).config(function($routeProvider){
 
   $routeProvider.when('/', {
     templateUrl: 'partials/search.html',

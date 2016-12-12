@@ -28,12 +28,12 @@
         <th>Curtidas</th>
         <th class="text-center">AÇÃO</th>
       </tr>
-      <tr ng-repeat="lists in list">
+      <tr ng-repeat="k in lists">
         <td>
-          <img class="img" ng-src="{{lists.imagem}}" >
+          <img class="img" ng-src="{{k.imagem}}" >
         </td>
-        <td>{{lists.nome}}</td>
-        <td>{{lists.like}}</td>
+        <td>{{k.nome}}</td>
+        <td>{{k.like}}</td>
         <td class="text-center">
           <button class="btn btn-info" ng-click="remove(contato)">Salvar</button>
         </td>
