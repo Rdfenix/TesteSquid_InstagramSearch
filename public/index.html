@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="instaSearc">
   <head>
     <meta charset="utf-8">
     <title>Instagram Search</title>
   </head>
-  <body>
-    <h1>Bem vindo</h1>
+  <body ng-controller="SearchController">
+    <ng-view></ng-view>
+    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/controllers/SearchController.js"></script>
+    <script type="text/javascript" src="js/controllers/ListController.js"></script>
   </body>
 </html>
