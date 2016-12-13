@@ -2,6 +2,7 @@
   <div class="container">
     <h1 class="text-center jumbotron">Instagram Search</h1>
   </div>
+  <p ng-show="mensagem.texto">{{mensagem.texto}}</p>
   <div class="container">
     <nav class="text-center" id="menu">
       <ul class="list-unstyled">
@@ -18,7 +19,8 @@
 </header>
 <div class="container">
   <h2>Pesquisa de Tags</h2>
-  <p>Resultado: {{total}}</p>
+  <p ng-show="lists.length">Resultado: {{lists.length}}</p>
+  <p class="text-info" ng-hide="lists.length">Sem resultados</p>
   <div class="table-responsive">
     <table class="table table-hover">
       <tr>
@@ -34,7 +36,7 @@
         <td>{{k.nome}}</td>
         <td>{{k.like}}</td>
         <td class="text-center">
-          <button class="btn btn-info">Salvar</button>
+          <button class="btn btn-info" ng-click="save()">Salvar</button>
         </td>
       </tr>
     </table>

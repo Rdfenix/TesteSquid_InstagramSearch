@@ -3,9 +3,10 @@ module.exports = function(app){
 
   //importa a função que lista os resultados para a url /results
   app.route('/results')
-    .get(controller.listResults);
+    .get(controller.listResults)
+    .post(controller.saveResult);
 
   app.route('/results/:id')
-    .delete(controller.removeResult)
-    .get(controller.getResult);
+    .get(controller.getResult)
+    .delete(controller.removeResult);
 };

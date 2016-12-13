@@ -5,6 +5,8 @@
   </div>
 </header>
 <div class="container">
+  <p ng-show="lists.length">Resultado: {{lists.length}}</p>
+  <p class="text-info" ng-hide="lists.length">Sem resultados</p>
   <div class="table-responsive">
     <table class="table table-hove">
       <tr>
@@ -20,7 +22,7 @@
         <td>{{k.nome}}</td>
         <td>{{k.like}}</td>
         <td class="text-center">
-          <button class="btn btn-warning" ng-click="remove(contato)">Remover</button>
+          <button class="btn btn-warning" ng-click="remove(k)">Remover</button>
         </td>
       </tr>
     </table>
