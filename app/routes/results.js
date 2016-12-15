@@ -3,8 +3,7 @@ module.exports = function(app){
 
   //importa a função que lista os resultados para a url /results
   app.route('/results')
-    .get(controller.listResults)
-    .post(controller.saveResult);
+    .get(controller.listResults);
 
   app.route('/results/:id')
     .get(controller.getResult)
