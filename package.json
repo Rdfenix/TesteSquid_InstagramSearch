@@ -18,9 +18,14 @@
   "homepage": "https://github.com/Rdfenix/TesteSquid_InstagramSearch#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "express-load": "^1.1.15",
+    "express-session": "^1.14.2",
     "method-override": "^2.3.7",
-    "mongoose": "^4.7.2"
+    "mongoose": "^4.7.2",
+    "mongoose-findorcreate": "^0.1.2",
+    "passport": "^0.3.2",
+    "passport-instagram": "^1.0.0"
   }
 }
