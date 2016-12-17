@@ -1,5 +1,6 @@
 var passport        =  require('passport');
 var InstaStrategy   =  require('passport-instagram').Strategy;
+var mongoose        =  require('mongoose');
 
 module.exports = function(){
   var User = mongoose.model('user');

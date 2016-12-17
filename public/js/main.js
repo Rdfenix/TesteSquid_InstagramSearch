@@ -1,4 +1,6 @@
-angular.module('instaSearc', ['ngRoute', 'ngResource']).config(function($routeProvider){
+angular.module('instaSearc', ['ngRoute', 'ngResource']).config(function($routeProvider, $httpProvider){
+
+  $httpProvider.interceptors.push('myInteceptor');
 
   $routeProvider.when('/', {
     templateUrl: 'partials/search.html',
@@ -11,6 +13,10 @@ angular.module('instaSearc', ['ngRoute', 'ngResource']).config(function($routePr
   $routeProvider.when('/list/:id', {
     templateUrl: 'partials/tag.html',
     controller: 'ListController'
+  });
+
+  $routeProvider.when('/auth', {
+    templateUrl: 'partials/auth.html'
   });
 
   $routeProvider.otherwise({redicteTo: '/'});
