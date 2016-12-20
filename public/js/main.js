@@ -4,7 +4,7 @@ angular.module('instaSearc', ['ngRoute', 'ngResource']).config(function($routePr
 
   $routeProvider.when('/', {
     templateUrl: 'partials/search.html',
-    controller: 'SearchController'
+    controller: 'ListController'
   });
   $routeProvider.when('/list', {
     templateUrl: 'partials/list.html',

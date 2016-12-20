@@ -37,3 +37,7 @@
 .resultTags{
   margin-bottom: 15px;
 }
+.logout{
+  position: relative;
+  top: -18px;
+}

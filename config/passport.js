@@ -6,8 +6,8 @@ module.exports = function(){
   var User = mongoose.model('user');
 
   passport.use(new InstaStrategy({
-    clientID: '2fd5122094aa4e09ac501cccb51d7f7b',
-    clientSecret: '84ee2bede0764636b9153592d56f82af',
+    clientID: '881d39436e3244d99a46b1b437d36ced',
+    clientSecret: '982c5920811541c2b07bbe0e582087be',
     callbackURL: 'http://localhost:3000/auth/instagram/callback'
   }, function(accessToken, refreshToken, profile, done){
     User.findOrCreate(
